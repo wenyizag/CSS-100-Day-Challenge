@@ -1,0 +1,294 @@
+
+.frame{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	height: 500px;
+	width: 500px;
+	-webkit-transform: translate(-50%, -50%);
+			transform: translate(-50%, -50%);
+	border-radius: 3px;
+	box-shadow: 1px 2px 10px 0px rgba(0, 0, 0, 0.3);
+	background: 	#57bead;
+	font-family: 'Titillium Web', sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.card{
+	position: absolute;
+	height: 300px;
+	width: 400px;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	border-radius: 3px;
+	background: #f2e9da;
+	color: #666;
+	box-shadow: 9px 8px 17px 1px rgba(0, 0, 0, 0.3);
+	overflow: hidden;
+}
+
+.card .header{
+	position: relative;
+	height: 80px;
+	width: 100%;
+	background: #fb9692;
+	color: #fff;
+}
+
+.header .big{
+	text-transform: uppercase;
+	font-weight: 600;
+	font-size: 18px;
+	position: absolute;
+}
+
+.header .small{
+	position: absolute;
+	font-weight: 400;
+	font-size: 14px;
+}
+
+.header .title{
+	top: 15px;
+	left: 30px;
+}
+
+.header .date{
+	left: 30px;
+	bottom: 20px;
+}
+
+.header .type{
+	top: 15px;
+	right: 30px;
+}
+
+.header .value{
+	right: 30px;
+	bottom: 20px;
+}
+
+.card .parameter{
+	text-align: right;
+	padding: 10px 0 14px 0;
+}
+
+.card .parameter{
+	padding-right: 17px;
+}
+
+.card .parameter span {
+    position: relative;
+    font-size: 14px;
+    /* line-height: 13px; */
+    padding: 0 13px 0 25px;
+}
+
+.card .parameter span:before{
+    position: absolute;
+    left: 4px;
+    top: 10px;
+    display: block;
+    width: 15px;
+    height: 3px;
+    content: '';
+    border-radius: 3px;
+}
+
+.card .parameter .red:before{
+	background: #FA7373;
+}
+
+.card .parameter .blue:before{
+	background: #7BA2FF;
+}
+
+.card .statistic{
+	position: relative;
+	height: 121px;
+	width: 340px;
+	margin: 0 auto;
+}
+
+.card .statistic .line-1, 
+.card .statistic .line-2,
+.card .statistic .line-3{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 1px;
+	background: #d6d6d6;
+}  
+
+.card .statistic .line-2{
+	top: 60px;
+}
+
+.card .statistic .line-3{
+	top: inherit;
+	bottom: 0;
+}
+
+.card .statistic .data svg{
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	width: 340px;
+}
+
+.card .statistic .data polyline{
+	fill: none;
+	stroke-linecap: round;
+	stroke-width: 2px;
+}
+
+.card .statistic .data.red{
+	stroke: #FA7373;
+}
+
+.card .statistic .data.blue{
+	stroke: #7BA2FF;
+}
+
+
+.card .statistic .data .tooltip{
+	position: absolute;
+	bottom: 13px;
+	font-weight: 600;
+	font-size: 13px;
+	line-height: 13px;
+	color: #fff;
+	border-radius: 3px;
+	padding: 8px 6px;
+	-webkit-transform: translate3d(-40%, -5px, 0);
+          	transform: translate3d(-40%, -5px, 0);
+	visibility: hidden;
+	opacity: 0;
+	-webkit-transition: opacity 0.4s ease-out 0s, -webkit-transform 0.4s ease-out 0s;
+          	transition: opacity 0.4s ease-out 0s, -webkit-transform 0.4s ease-out 0s;
+  			transition: transform 0.4s ease-out 0s, opacity 0.4s ease-out 0s;
+  			transition: transform 0.4s ease-out 0s, opacity 0.4s ease-out 0s, -webkit-transform 0.4s ease-out 0s;		
+}
+
+.card .statistic .data .tooltip:after{
+	position: absolute;
+	display: block;
+	content: '';
+	height: 6px;
+	width: 6px;
+	left: 50%;
+	margin-left: -3px;
+	bottom: -3px;
+	-webkit-transform: rotate(45deg); 
+			transform: rotate(45deg); 
+}
+
+
+
+.card .statistic .data [class^="point-"]{
+	position: absolute;
+	border-radius: 50%;
+	height: 7px;
+	width: 7px;
+	cursor: pointer;
+	z-index: 10;
+}
+
+.card .statistic .data [class^="point-"]:hover .tooltip{
+	visibility: visible;
+	opacity: 1;
+	-webkit-transform: translate3d(-40%, -5px, 0);
+          transform: translate3d(-40%, -5px, 0);
+}
+
+
+.card .statistic .data.red .point-1{
+	left: 17px;
+  	top: 16px;
+}
+.card .statistic .data.red .point-2 {
+	  left: 67px;
+	  top: 24px;
+}
+.card .statistic .data.red .point-3 {
+	  left: 117px;
+	  top: 11px;
+}
+.card .statistic .data.red .point-4 {
+	  left: 167px;
+	  top: 26px;
+}
+.card .statistic .data.red .point-5 {
+	  left: 217px;
+	  top: 22px;
+}
+.card .statistic .data.red .point-6 {
+	  left: 267px;
+	  top: 46px;
+}
+.card .statistic .data.red .point-7 {
+	  left: 317px;
+	  top: 24px;
+}
+
+.card .statistic .data.red [class^="point-"],
+.card .statistic .data.red .tooltip,
+.card .statistic .data.red .tooltip:after{
+	background: #FA7373;
+}
+
+.card .statistic .data.blue .point-1{
+	  left: 17px;
+	  top: 76px;
+}
+.card .statistic .data.blue .point-2 {
+	  left: 67px;
+	  top: 64px;
+}
+.card .statistic .data.blue .point-3 {
+	  left: 117px;
+	  top: 71px;
+}
+.card .statistic .data.blue .point-4 {
+	  left: 167px;
+	  top: 62px;
+}
+.card .statistic .data.blue .point-5 {
+	  left: 217px;
+	  top: 94px;
+}
+.card .statistic .data.blue .point-6 {
+	  left: 267px;
+	  top: 106px;
+}
+.card .statistic .data.blue .point-7 {
+	  left: 317px;
+	  top: 82px;
+}
+
+.card .statistic .data.blue [class^="point-"],
+.card .statistic .data.blue .tooltip,
+.card .statistic .data.blue .tooltip:after{
+	background: #7BA2FF;
+}
+
+.card .days{
+	width: 340px;
+	margin: 0 auto;
+}
+
+.card .days .day{
+	display: block;
+	float: left;
+	width: 14.28571%;
+	text-align: center;
+	font-size: 13px;
+	color: #6a6a6a;
+	line-height: 35px;
+	text-transform: uppercase;
+}
