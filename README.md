@@ -17,3 +17,6 @@ This is a 100 Days CSS Challenge, this challenge is initialed by CodePen.com
 
 ## Day 6 - [Profile](https://github.com/wenyizag/CSS-100-Day-Challenge/tree/master/Day%206)
 <a href="https://imgflip.com/gif/2aacla"><img src="https://i.imgflip.com/2aacla.gif" title="made at imgflip.com"/></a>
+
+## Day 7 - [Notifications and Search](https://github.com/wenyizag/CSS-100-Day-Challenge/tree/master/Day%207%20-%20Notifications)
+<a href="https://imgflip.com/gif/2acxrx"><img src="https://i.imgflip.com/2acxrx.gif" title="made at imgflip.com"/></a>
