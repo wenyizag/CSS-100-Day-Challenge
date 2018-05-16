@@ -1,0 +1,203 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400);
+
+.frame{
+	position: absolute;
+	height: 500px;
+	width: 500px;
+	top: 50%;
+	left: 50%;
+	margin: -250px -250px;
+	background: #1A2238;
+	color: #394568;
+	border-radius: 3px;
+    box-shadow: 1px 2px 10px 0px rgba(0, 0, 0, 0.3);
+  	font-family: 'Open Sans', Helvetica, sans-serif;
+    font-weight: lighter;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overflow: hidden;
+}
+
+.moon{
+	position: absolute;
+	top: 45px;
+	left: 65px;
+	width: 80px;
+	height: 80px;
+	background: #F6EDBD;
+	border-radius: 50%;
+	box-shadow: 0 0 16px 0 #F6EDBD;
+	overflow: hidden;
+	-webkit-animation: rise 1s ease-out;
+			animation: rise 1s ease-out;
+}
+
+/*@-webkit-keyframes rise{
+	0%{
+		-webkit-transform: translate(-30px, 300px);
+				transform: translate(-30px, 300px);
+	}
+	100%{
+		-webkit-transform: translate(0, 0);
+				transform: translate(0, 0);
+	}
+}
+
+@keyframes rise{
+	0%{
+		-webkit-transform: translate(-30px, 300px);
+				transform: translate(-30px, 300px);
+	}
+	100%{
+		-webkit-transform: translate(0, 0);
+				transform: translate(0, 0);
+	}
+}*/
+
+/*big crater: 1,2,3 
+  medium crater: 4,5,6,7
+  small crater: 8,9,10,11
+*/
+
+.crater-1, .crater-2, .crater-3,
+.crater-4, .crater-5, .crater-6, .crater-7,
+.crater-8, .crater-9, .crater-10, .crater-11
+{
+	position: absolute;
+	height: 11px;
+	width: 11px;
+	background: #ECE1A8;
+	border-radius: 10px;
+	top: 15px;
+	left: 15px;
+}
+
+.crater-2{
+	top: 37px;
+	left: 52px;
+}
+
+.crater-3{
+    top: 73px;
+    left: 32px;
+}
+
+.crater-4, .crater-5, .crater-6, .crater-7{
+	height: 8px;
+	width: 8px;
+	top: 20px;
+	left: 3px;
+}
+
+.crater-5{
+    top: 2px;
+    left: 33px;
+}
+
+.crater-6{
+    top: 42px;
+    left: 30px;
+}
+
+.crater-7{
+    top: 56px;
+    left: 60px;
+}
+
+.crater-8, .crater-9, .crater-10, .crater-11{
+	height: 5px;
+	width: 5px;
+	top: 50px;
+    left: 15px;
+}
+
+.crater-9{
+    top: 22px;
+    left: 70px;
+}
+
+.crater-10{
+    top: 15px;
+    left: 50px;
+}
+
+.crater-11{
+    top: 62px;
+    left: 35px;
+}
+
+.hill-bg-1, .hill-bg-2,
+.hill-fg-1, .hill-fg-2, .hill-fg-3{
+	position: absolute;
+	left: -20px;
+    bottom: -25px;
+	height: 290px;
+	width: 357px;
+	z-index: 2;
+	background: #26314F;
+	border-radius: 50%;
+
+}
+.hill-bg-2{
+	left: 230px;
+    bottom: -15px;
+}
+
+.hill-fg-1, .hill-fg-2, .hill-fg-3{
+	background: #303C5D;
+	left: 100px;
+    bottom: -35px;
+}
+
+ .hill-fg-2{
+ 	left: -150px;
+    bottom: -65px;
+ }
+
+  .hill-fg-3{
+    left: 350px;
+    bottom: -80px;
+ }
+
+
+.front{
+	position: absolute;
+	z-index: 10;
+	bottom: 0;
+	left: 0;
+	width: 500px;
+	height: 130px;
+	background: #fff;
+}
+
+ .front .temperature{
+    font-size: 50px;
+    line-height: 130px;
+    float: left;
+    margin-left: 30px;
+ }
+
+ .front .info{
+	float: left;
+    font-size: 17px;
+    margin: 37px 0 0 30px;
+    line-height: 28px;
+ }
+
+ .front .preview{
+    float: right;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 25px;
+    text-align: right;
+    margin: 37px 30px 0 0;
+ }
+
+.front .preview td{
+	padding: 0 3px;
+	text-transform: uppercase;
+}
+
+ .front .preview td:first-child {
+    font-weight: 300;
+}
