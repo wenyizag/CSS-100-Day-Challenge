@@ -20,3 +20,6 @@ This is a 100 Days CSS Challenge, this challenge is initialed by CodePen.com
 
 ## Day 7 - [Notifications and Search](https://github.com/wenyizag/CSS-100-Day-Challenge/tree/master/Day%207%20-%20Notifications)
 <a href="https://imgflip.com/gif/2acxrx"><img src="https://i.imgflip.com/2acxrx.gif" title="made at imgflip.com"/></a>
+
+## Day 9 - [Weather](https://github.com/wenyizag/CSS-100-Day-Challenge/tree/master/Day%209%20-%20Weather)
+<a href="https://imgflip.com/gif/2aflbr"><img src="https://i.imgflip.com/2aflbr.gif" title="made at imgflip.com"/></a>
