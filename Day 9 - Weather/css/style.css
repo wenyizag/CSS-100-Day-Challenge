@@ -32,7 +32,7 @@
 			animation: rise 1s ease-out;
 }
 
-/*@-webkit-keyframes rise{
+@-webkit-keyframes rise{
 	0%{
 		-webkit-transform: translate(-30px, 300px);
 				transform: translate(-30px, 300px);
@@ -52,7 +52,7 @@
 		-webkit-transform: translate(0, 0);
 				transform: translate(0, 0);
 	}
-}*/
+}
 
 /*bg crater: 1,2,3 
   md crater: 4,5,6,7
