@@ -1,3 +1,655 @@
 .frame{
-	
+	position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 500px;
+    height: 500px;
+    margin-top: -250px;
+    margin-left: -250px;
+    border-radius: 3px;
+    box-shadow: 1px 2px 10px 0px rgba(0, 0, 0, 0.3);
+    background: #4C4C4C;
+    color: #fff;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 13px;
+    line-height: 100%;
+    text-transform: uppercase;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.center {
+    position: absolute;
+    width: 230px;
+    height: 230px;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    		transform: translate(-50%, -50%);
+    background: #242424;
+    border-radius: 50%;
+    border: 8px solid #3A3A3A;
+    text-align: center;
+}
+
+.date{
+	position: absolute;
+	top: 76px;
+    width: 100%;
+}
+
+.time {
+    position: absolute;
+    top: 90px;
+    width: 100%;
+    font-weight: 700;
+    font-size: 44px;
+    line-height: 100%;
+    margin: 4px 0;
+}
+
+.beat {
+    position: absolute;
+    top: 145px;
+    left: 57px;
+}
+
+.energy {
+    position: absolute;
+    top: 145px;
+    right: 55px;
+}
+
+.point-set-1 {
+    position: absolute;
+    height: 200px;
+    width: 200px;
+    top: 15px;
+    left: 15px;
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+}
+
+.point-set-1 .point-1,
+.point-set-1 .point-2,
+.point-set-1 .point-3,
+.point-set-1 .point-4{
+  position: absolute;
+  width: 2px;
+  height: 2px;
+  top: 0;
+  left: 99px;
+  background: #D3D3D3;
+  border-radius: 50%;
+}
+
+.point-set-1 .point-2{
+	top: 99px;
+	left: auto;
+	right: 0;
+}
+
+.point-set-1 .point-3 {
+  top: auto;
+  bottom: 0;
+}
+
+.point-set-1 .point-4 {
+	top: 99px;
+	left: 0;
+}
+
+.point-set-2 {
+  	position: absolute;
+	height: 200px;
+	width: 200px;
+	top: 15px;
+	left: 15px;
+  	-webkit-transform: rotate(6deg);
+          	transform: rotate(6deg);
+}
+
+.point-set-2 .point-1,
+.point-set-2 .point-2,
+.point-set-2 .point-3,
+.point-set-2 .point-4{
+  position: absolute;
+  width: 2px;
+  height: 2px;
+  top: 0;
+  left: 99px;
+  background: #D3D3D3;
+  border-radius: 50%;
+}
+
+.point-set-2 .point-2{
+	top: 99px;
+	left: auto;
+	right: 0;
+}
+
+.point-set-2 .point-3 {
+  top: auto;
+  bottom: 0;
+}
+
+.point-set-2 .point-4 {
+	top: 99px;
+	left: 0;
+}
+
+.point-set-2 {
+  	position: absolute;
+	height: 200px;
+	width: 200px;
+	top: 15px;
+	left: 15px;
+  	-webkit-transform: rotate(6deg);
+          	transform: rotate(6deg);
+}
+
+.point-set-3 {
+  	position: absolute;
+	height: 200px;
+	width: 200px;
+	top: 15px;
+	left: 15px;
+  	-webkit-transform: rotate(12deg);
+          	transform: rotate(12deg);
+}
+
+.point-set-3 .point-1,
+.point-set-3 .point-2,
+.point-set-3 .point-3,
+.point-set-3 .point-4{
+  position: absolute;
+  width: 2px;
+  height: 2px;
+  top: 0;
+  left: 99px;
+  background: #D3D3D3;
+  border-radius: 50%;
+}
+
+.point-set-3 .point-2{
+	top: 99px;
+	left: auto;
+	right: 0;
+}
+
+.point-set-3 .point-3 {
+  top: auto;
+  bottom: 0;
+}
+
+.point-set-3 .point-4 {
+	top: 99px;
+	left: 0;
+}
+
+.point-set-4 {
+  	position: absolute;
+	height: 200px;
+	width: 200px;
+	top: 15px;
+	left: 15px;
+  	-webkit-transform: rotate(18deg);
+          	transform: rotate(18deg);
+}
+
+.point-set-4 .point-1,
+.point-set-4 .point-2,
+.point-set-4 .point-3,
+.point-set-4 .point-4{
+  position: absolute;
+  width: 2px;
+  height: 2px;
+  top: 0;
+  left: 99px;
+  background: #D3D3D3;
+  border-radius: 50%;
+}
+
+.point-set-4 .point-2{
+	top: 99px;
+	left: auto;
+	right: 0;
+}
+
+.point-set-4 .point-3 {
+  top: auto;
+  bottom: 0;
+}
+
+.point-set-4 .point-4 {
+	top: 99px;
+	left: 0;
+}
+
+.point-set-5 {
+  	position: absolute;
+	height: 200px;
+	width: 200px;
+	top: 15px;
+	left: 15px;
+  	-webkit-transform: rotate(24deg);
+          	transform: rotate(24deg);
+}
+
+.point-set-5 .point-1,
+.point-set-5 .point-2,
+.point-set-5 .point-3,
+.point-set-5 .point-4{
+  position: absolute;
+  width: 2px;
+  height: 2px;
+  top: 0;
+  left: 99px;
+  background: #D3D3D3;
+  border-radius: 50%;
+}
+
+.point-set-5 .point-2{
+	top: 99px;
+	left: auto;
+	right: 0;
+}
+
+.point-set-5 .point-3 {
+  top: auto;
+  bottom: 0;
+}
+
+.point-set-5 .point-4 {
+	top: 99px;
+	left: 0;
+}
+
+.point-set-6 {
+  	position: absolute;
+	height: 200px;
+	width: 200px;
+	top: 15px;
+	left: 15px;
+  	-webkit-transform: rotate(30deg);
+          	transform: rotate(30deg);
+}
+
+.point-set-6 .point-1,
+.point-set-6 .point-2,
+.point-set-6 .point-3,
+.point-set-6 .point-4{
+  position: absolute;
+  width: 2px;
+  height: 2px;
+  top: 0;
+  left: 99px;
+  background: #D3D3D3;
+  border-radius: 50%;
+}
+
+.point-set-6 .point-2{
+	top: 99px;
+	left: auto;
+	right: 0;
+}
+
+.point-set-6 .point-3 {
+  top: auto;
+  bottom: 0;
+}
+
+.point-set-6 .point-4 {
+	top: 99px;
+	left: 0;
+}
+
+.point-set-7 {
+  	position: absolute;
+	height: 200px;
+	width: 200px;
+	top: 15px;
+	left: 15px;
+  	-webkit-transform: rotate(36deg);
+          	transform: rotate(36deg);
+}
+
+.point-set-7 .point-1,
+.point-set-7 .point-2,
+.point-set-7 .point-3,
+.point-set-7 .point-4{
+  position: absolute;
+  width: 2px;
+  height: 2px;
+  top: 0;
+  left: 99px;
+  background: #D3D3D3;
+  border-radius: 50%;
+}
+
+.point-set-7 .point-2{
+	top: 99px;
+	left: auto;
+	right: 0;
+}
+
+.point-set-7 .point-3 {
+  top: auto;
+  bottom: 0;
+}
+
+.point-set-7 .point-4 {
+	top: 99px;
+	left: 0;
+}
+
+.point-set-8 {
+  	position: absolute;
+	height: 200px;
+	width: 200px;
+	top: 15px;
+	left: 15px;
+  	-webkit-transform: rotate(42deg);
+          	transform: rotate(42deg);
+}
+
+.point-set-8 .point-1,
+.point-set-8 .point-2,
+.point-set-8 .point-3,
+.point-set-8 .point-4{
+  position: absolute;
+  width: 2px;
+  height: 2px;
+  top: 0;
+  left: 99px;
+  background: #D3D3D3;
+  border-radius: 50%;
+}
+
+.point-set-8 .point-2{
+	top: 99px;
+	left: auto;
+	right: 0;
+}
+
+.point-set-8 .point-3 {
+  top: auto;
+  bottom: 0;
+}
+
+.point-set-8 .point-4 {
+	top: 99px;
+	left: 0;
+}
+
+.point-set-9 {
+  	position: absolute;
+	height: 200px;
+	width: 200px;
+	top: 15px;
+	left: 15px;
+  	-webkit-transform: rotate(48deg);
+          	transform: rotate(48deg);
+}
+
+.point-set-9 .point-1,
+.point-set-9 .point-2,
+.point-set-9 .point-3,
+.point-set-9 .point-4{
+  position: absolute;
+  width: 2px;
+  height: 2px;
+  top: 0;
+  left: 99px;
+  background: #D3D3D3;
+  border-radius: 50%;
+}
+
+.point-set-9 .point-2{
+	top: 99px;
+	left: auto;
+	right: 0;
+}
+
+.point-set-9 .point-3 {
+  top: auto;
+  bottom: 0;
+}
+
+.point-set-9 .point-4 {
+	top: 99px;
+	left: 0;
+}
+.point-set-10 {
+  	position: absolute;
+	height: 200px;
+	width: 200px;
+	top: 15px;
+	left: 15px;
+  	-webkit-transform: rotate(54deg);
+          	transform: rotate(54deg);
+}
+
+.point-set-10 .point-1,
+.point-set-10 .point-2,
+.point-set-10 .point-3,
+.point-set-10 .point-4{
+  position: absolute;
+  width: 2px;
+  height: 2px;
+  top: 0;
+  left: 99px;
+  background: #D3D3D3;
+  border-radius: 50%;
+}
+
+.point-set-10 .point-2{
+	top: 99px;
+	left: auto;
+	right: 0;
+}
+
+.point-set-10 .point-3 {
+  top: auto;
+  bottom: 0;
+}
+
+.point-set-10 .point-4 {
+	top: 99px;
+	left: 0;
+}
+
+.point-set-11 {
+  	position: absolute;
+	height: 200px;
+	width: 200px;
+	top: 15px;
+	left: 15px;
+  	-webkit-transform: rotate(60deg);
+          	transform: rotate(60deg);
+}
+
+.point-set-11 .point-1,
+.point-set-11 .point-2,
+.point-set-11 .point-3,
+.point-set-11 .point-4{
+  position: absolute;
+  width: 2px;
+  height: 2px;
+  top: 0;
+  left: 99px;
+  background: #D3D3D3;
+  border-radius: 50%;
+}
+
+.point-set-11 .point-2{
+	top: 99px;
+	left: auto;
+	right: 0;
+}
+
+.point-set-11 .point-3 {
+  top: auto;
+  bottom: 0;
+}
+
+.point-set-11 .point-4 {
+	top: 99px;
+	left: 0;
+}
+
+.point-set-12 {
+  	position: absolute;
+	height: 200px;
+	width: 200px;
+	top: 15px;
+	left: 15px;
+  	-webkit-transform: rotate(66deg);
+          	transform: rotate(66deg);
+}
+
+.point-set-12 .point-1,
+.point-set-12 .point-2,
+.point-set-12 .point-3,
+.point-set-12 .point-4{
+  position: absolute;
+  width: 2px;
+  height: 2px;
+  top: 0;
+  left: 99px;
+  background: #D3D3D3;
+  border-radius: 50%;
+}
+
+.point-set-12 .point-2{
+	top: 99px;
+	left: auto;
+	right: 0;
+}
+
+.point-set-12 .point-3 {
+  top: auto;
+  bottom: 0;
+}
+
+.point-set-12 .point-4 {
+	top: 99px;
+	left: 0;
+}
+
+.point-set-13 {
+  	position: absolute;
+	height: 200px;
+	width: 200px;
+	top: 15px;
+	left: 15px;
+  	-webkit-transform: rotate(72deg);
+          	transform: rotate(72deg);
+}
+
+.point-set-13 .point-1,
+.point-set-13 .point-2,
+.point-set-13 .point-3,
+.point-set-13 .point-4{
+  position: absolute;
+  width: 2px;
+  height: 2px;
+  top: 0;
+  left: 99px;
+  background: #D3D3D3;
+  border-radius: 50%;
+}
+
+.point-set-13 .point-2{
+	top: 99px;
+	left: auto;
+	right: 0;
+}
+
+.point-set-13 .point-3 {
+  top: auto;
+  bottom: 0;
+}
+
+.point-set-13 .point-4 {
+	top: 99px;
+	left: 0;
+}
+
+.point-set-14 {
+  	position: absolute;
+	height: 200px;
+	width: 200px;
+	top: 15px;
+	left: 15px;
+  	-webkit-transform: rotate(78deg);
+          	transform: rotate(78deg);
+}
+
+.point-set-14 .point-1,
+.point-set-14 .point-2,
+.point-set-14 .point-3,
+.point-set-14 .point-4{
+  position: absolute;
+  width: 2px;
+  height: 2px;
+  top: 0;
+  left: 99px;
+  background: #D3D3D3;
+  border-radius: 50%;
+}
+
+.point-set-14 .point-2{
+	top: 99px;
+	left: auto;
+	right: 0;
+}
+
+.point-set-14 .point-3 {
+  top: auto;
+  bottom: 0;
+}
+
+.point-set-14 .point-4 {
+	top: 99px;
+	left: 0;
+}
+
+.point-set-15 {
+  	position: absolute;
+	height: 200px;
+	width: 200px;
+	top: 15px;
+	left: 15px;
+  	-webkit-transform: rotate(84deg);
+          	transform: rotate(84deg);
+}
+
+.point-set-15 .point-1,
+.point-set-15 .point-2,
+.point-set-15 .point-3,
+.point-set-15 .point-4{
+  position: absolute;
+  width: 2px;
+  height: 2px;
+  top: 0;
+  left: 99px;
+  background: #D3D3D3;
+  border-radius: 50%;
+}
+
+.point-set-15 .point-2{
+	top: 99px;
+	left: auto;
+	right: 0;
+}
+
+.point-set-15 .point-3 {
+  top: auto;
+  bottom: 0;
+}
+
+.point-set-15 .point-4 {
+	top: 99px;
+	left: 0;
 }
