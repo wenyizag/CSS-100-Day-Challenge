@@ -1,0 +1,145 @@
+.frame {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 500px;
+    height: 500px;
+    margin-top: -250px;
+    margin-left: -250px;
+    border-radius: 2px;
+    box-shadow: 1px 2px 10px 0px rgba(0, 0, 0, 0.3);
+    background: #37aff7;
+    background: -webkit-radial-gradient(center, ellipse cover,#37aff7 0%, #abd8ea 100%);
+    background: -webkit-radial-gradient(center ellipse, #37aff7 0%, #abd8ea 100%);
+    background: radial-gradient(ellipse at center,#37aff7 0%, #abd8ea 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#37aff7', endColorstr='#abd8ea',GradientType=1);
+    overflow: hidden;
+}
+
+.floor {
+  position: absolute;
+  top: 280px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #232323;
+}
+
+.invisible-man{
+  -webkit-animation: fade-in .8s ease-out 1s;
+          animation: fade-in .8s ease-out 1s;
+  -webkit-animation-fill-mode: backwards;
+          animation-fill-mode: backwards;
+}
+
+@keyframes fade-in{
+	0%{
+		opacity: 0;
+	}
+	100%{
+		opacity: 1;
+	}
+}
+
+.leg {
+    position: absolute;
+    top: 0px;
+    left: 180px;
+    width: 151px;
+    height: 280px;
+    /*background: #000;*/
+    -webkit-transform-origin: 50% 0;
+    		transform-origin: 50% 0;
+}
+
+.shoe {
+    position: absolute;
+    width: 151px;
+    height: 128px;
+    left: 0;
+    bottom: 0;
+    background: url(http://100dayscss.com/codepen/doc-martens.svg) center no-repeat;
+    -webkit-transform-origin: 0 95%;
+    		transform-origin: 0 95%;
+
+}
+
+.left{
+	-webkit-animation: leg-swing 2s ease-in-out 1s infinite;
+			animation: leg-swing 2s ease-in-out 1s infinite;
+}
+
+.left .shoe{
+	-webkit-animation: shoe-turn 2s ease-in-out 1s infinite;
+			animation: shoe-turn 2s ease-in-out 1s infinite;
+}
+
+.right{
+	-webkit-animation: leg-swing 2s ease-in-out infinite;
+			animation: leg-swing 2s ease-in-out infinite;
+}
+
+.right .shoe{
+	-webkit-animation: shoe-turn 2s ease-in-out infinite;
+			animation: shoe-turn 2s ease-in-out infinite;
+}
+
+@-webkit-keyframes leg-swing{
+	0%, 100%{
+		-webkit-transform: rotate(-20deg);
+				transform: rotate(-20deg);
+	}
+	50%{
+		-webkit-transform: rotate(40deg);
+				transform: rotate(40deg);
+	}
+}
+
+@keyframes leg-swing{
+	0%, 100%{
+		-webkit-transform: rotate(-20deg);
+				transform: rotate(-20deg);
+	}
+	50%{
+		-webkit-transform: rotate(40deg);
+				transform: rotate(40deg);
+	}
+}
+
+@-webkit-keyframes shoe-turn {
+  0%, 100% {
+    -webkit-transform: rotate(-10deg) translateY(-5px) translateX(10px);
+            transform: rotate(-10deg) translateY(-5px) translateX(10px);
+  }
+  25% {
+    -webkit-transform: rotate(0deg) translateY(0px) translateX(0);
+            transform: rotate(0deg) translateY(0px) translateX(0);
+  }
+  50% {
+    -webkit-transform: rotate(10deg) translateY(-10px) translateX(10px);
+            transform: rotate(10deg) translateY(-10px) translateX(10px);
+  }
+  75% {
+    -webkit-transform: rotate(0deg) translateY(-40px) translateX(0);
+            transform: rotate(0deg) translateY(-40px) translateX(0);
+  }
+}
+
+@keyframes shoe-turn {
+  0%, 100% {
+    -webkit-transform: rotate(-10deg) translateY(-5px) translateX(10px);
+            transform: rotate(-10deg) translateY(-5px) translateX(10px);
+  }
+  25% {
+    -webkit-transform: rotate(0deg) translateY(0px) translateX(0);
+            transform: rotate(0deg) translateY(0px) translateX(0);
+  }
+  50% {
+    -webkit-transform: rotate(10deg) translateY(-10px) translateX(10px);
+            transform: rotate(10deg) translateY(-10px) translateX(10px);
+  }
+  75% {
+    -webkit-transform: rotate(0deg) translateY(-40px) translateX(0);
+            transform: rotate(0deg) translateY(-40px) translateX(0);
+  }
+}
