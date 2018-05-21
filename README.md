@@ -30,3 +30,7 @@ This is a 100 Days CSS Challenge, this challenge is initialed by CodePen.com
 
 ## Day 11 - [Invisible Man](https://github.com/wenyizag/CSS-100-Day-Challenge/tree/master/Day%2011)
 <a href="https://imgflip.com/gif/2ao7oy"><img src="https://i.imgflip.com/2ao7oy.gif" title="made at imgflip.com"/></a>
+
+## Day 12 - [Tooltip](https://github.com/wenyizag/CSS-100-Day-Challenge/tree/master/Day%2012%20-%20Tooltip)
+<a href="https://imgflip.com/gif/2aoedu"><img src="https://i.imgflip.com/2aoedu.gif" title="made at imgflip.com"/></a>
+
