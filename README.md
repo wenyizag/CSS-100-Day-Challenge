@@ -34,3 +34,6 @@ This is a 100 Days CSS Challenge, this challenge is initialed by CodePen.com
 ## Day 12 - [Tooltip](https://github.com/wenyizag/CSS-100-Day-Challenge/tree/master/Day%2012%20-%20Tooltip)
 <a href="https://imgflip.com/gif/2aoedu"><img src="https://i.imgflip.com/2aoedu.gif" title="made at imgflip.com"/></a>
 
+## Day 13 - [User Gallery](https://github.com/wenyizag/CSS-100-Day-Challenge/tree/master/Day%2013%20-%20User%20Gallery)
+<a href="https://imgflip.com/gif/2aqosb"><img src="https://i.imgflip.com/2aqosb.gif" title="made at imgflip.com"/></a>
+
