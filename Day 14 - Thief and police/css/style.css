@@ -1,0 +1,303 @@
+.frame {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 500px;
+    height: 500px;
+    margin-top: -250px;
+    margin-left: -250px;
+    border-radius: 3px;
+    box-shadow: 1px 2px 10px 0px rgba(0, 0, 0, 0.3);
+    background: #00a2e4;
+    background: -webkit-linear-gradient(to right, #00a2e4 0%, #2871b5 100%);
+    background: linear-gradient(to right, #00a2e4 0%, #2871b5 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00a2e4', endColorstr='#2871b5');
+    color: #2f0d27;
+}
+
+.card {
+    position: absolute;
+    width: 360px;
+    height: 280px;
+    top: 100px;
+    left: 70px;
+    /*background: #000;*/
+}
+
+.card .flip{
+    width: 100%;
+    height: 100%;
+    box-shadow: 8px 10px 15px 0 rgba(0, 0, 0, 0.5);
+}
+
+
+
+.card .front, .card .back {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #ec9e14;
+    border-radius: 3px;
+    overflow: hidden;
+    text-align: center;
+}
+
+.card .front {
+    /*z-index: 2;*/
+}
+
+.flip img{
+    height: 170px;
+    position: relative;
+    top: 52px;
+}
+
+.flip .front .thief{
+    -webkit-animation: thief .6s ease-in-out infinite;
+          animation: thief .6s ease-in-out infinite;
+    -webkit-transform-origin: 50% 100%;
+            transform-origin: 50% 100%;
+}
+
+@-webkit-keyframes thief {
+  0%, 100% {
+    -webkit-transform: scaleY(1);
+            transform: scaleY(1);
+  }
+  50% {
+    -webkit-transform: scaleY(1.03);
+            transform: scaleY(1.03);
+  }
+}
+@keyframes thief {
+  0%, 100% {
+    -webkit-transform: scaleY(1);
+            transform: scaleY(1);
+  }
+  50% {
+    -webkit-transform: scaleY(1.03);
+            transform: scaleY(1.03);
+  }
+}
+
+.card .front .street {
+    position: absolute;
+    top: 204px;
+    left: 80px;
+    width: 200px;
+    height: 3px;
+    /*background: #000;*/
+    overflow: hidden;
+}
+
+.card .front .street .stripe-1, .card .front .street .stripe-2, .card .front .street .stripe-3,
+.card .front .street .stripe-4, .card .front .street .stripe-5, .card .front .street .stripe-6,
+.card .front .street .stripe-7, .card .front .street .stripe-8, .card .front .street .stripe-9{
+    position: absolute;
+    right: -25px;
+    top: 0;
+    height: 3px;
+    width: 4px;
+    background: #1a1414;
+    border-radius: 3px;
+    -webkit-animation: street 1s linear 0.3s infinite;
+            animation: street 1s linear 0.3s infinite;
+}
+
+.card .front .street .stripe-2 {
+    width: 6px;
+    -webkit-animation: street 1s linear 1s infinite;
+            animation: street 1s linear 1s infinite;
+}
+
+.card .front .street .stripe-3 {
+    width: 8px;
+    -webkit-animation: street 1s linear .4s infinite;
+            animation: street 1s linear .4s infinite;
+}
+
+.card .front .street .stripe-4 {
+    width: 10px;
+    -webkit-animation: street .9s linear .2s infinite;
+            animation: street .9s linear .2s infinite;
+}
+
+.card .front .street .stripe-5 {
+    width: 12px;
+    -webkit-animation: street 1s linear .5s infinite;
+            animation: street 1s linear .5s infinite;
+}
+
+.card .front .street .stripe-6 {
+    width: 14px;
+    -webkit-animation: street .9s linear .6s infinite;
+            animation: street .9s linear .6s infinite;
+}
+
+.card .front .street .stripe-7 {
+    width: 16px;
+    -webkit-animation: street 1s linear .5s infinite;
+            animation: street 1s linear .5s infinite;    
+}
+
+.card .front .street .stripe-8 {
+    width: 18px;
+    -webkit-animation: street 1s linear .6s infinite;
+            animation: street 1s linear .6s infinite;    
+}
+
+.card .front .street .stripe-9 {
+    width: 20px;
+    -webkit-animation: street .9s linear .1s infinite;
+            animation: street .9s linear .1s infinite;    
+}
+
+@-webkit-keyframes street {
+  0% {
+    -webkit-transform: translate3d(0, 0, 0) scaleX(1);
+            transform: translate3d(0, 0, 0) scaleX(1);
+  }
+  100% {
+    -webkit-transform: translate3d(-220px, 0, 0) scaleX(0.8);
+            transform: translate3d(-220px, 0, 0) scaleX(0.8);
+  }
+}
+@keyframes street {
+  0% {
+    -webkit-transform: translate3d(0, 0, 0) scaleX(1);
+            transform: translate3d(0, 0, 0) scaleX(1);
+  }
+  100% {
+    -webkit-transform: translate3d(-220px, 0, 0) scaleX(0.8);
+            transform: translate3d(-220px, 0, 0) scaleX(0.8);
+  }
+}
+
+.flip .back .police{
+    -webkit-animation: police .6s ease-in-out infinite;
+            animation: police .6s ease-in-out infinite;
+}
+
+@-webkit-keyframes police {
+  0%, 100% {
+    -webkit-transform: translate3d(0, -5px, 0);
+            transform: translate3d(0, -5px, 0);
+  }
+  50% {
+    -webkit-transform: translate3d(0, 5px, 0);
+            transform: translate3d(0, 5px, 0);
+  }
+}
+@keyframes police {
+  0%, 100% {
+    -webkit-transform: translate3d(0, -5px, 0);
+            transform: translate3d(0, -5px, 0);
+  }
+  50% {
+    -webkit-transform: translate3d(0, 5px, 0);
+            transform: translate3d(0, 5px, 0);
+  }
+}
+
+.card .back .sky {
+    position: absolute;
+    top: 0;
+    left: 80px;
+    width: 200px;
+    height: 280px;
+    /*background: #000;*/
+    overflow: hidden;
+}
+
+.card .back .sky .cloud-1, .card .back .sky .cloud-2, .card .back .sky .cloud-3,
+.card .back .sky .cloud-4, .card .back .sky .cloud-5, .card .back .sky .cloud-6,
+.card .back .sky .cloud-7, .card .back .sky .cloud-8, .card .back .sky .cloud-9{
+    position: absolute;
+    right: -25px;
+    top: 55px;
+    height: 3px;
+    width: 12.4px;
+    background: #1a1414;
+    border-radius: 3px;   
+    -webkit-animation: cloud .8s linear .9s infinite;
+            animation: cloud .8s linear .9s infinite;
+}
+
+.card .back .sky .cloud-2{
+    top: 74px;
+    width: 16.2px;
+    -webkit-animation: cloud .7s linear .9s infinite;
+            animation: cloud .7s linear .9s infinite;
+}
+
+.card .back .sky .cloud-3{
+    top: 93px;
+    width: 20.9px;
+    -webkit-animation: cloud .7s linear 1s infinite;
+            animation: cloud .7s linear 1s infinite;
+}
+
+.card .back .sky .cloud-4{
+    top: 112px;
+    width: 20.9px;
+    -webkit-animation: cloud .7s linear .9s infinite;
+            animation: cloud .7s linear .9s infinite;
+}
+
+.card .back .sky .cloud-5{
+    top: 131px;
+    width: 13.6px;
+    -webkit-animation: cloud .7s linear .4s infinite;
+            animation: cloud .7s linear .4s infinite;
+}
+
+.card .back .sky .cloud-6{
+    top: 150px;
+    width: 22.7px;
+    -webkit-animation: cloud .7s linear .9s infinite;
+            animation: cloud .7s linear .9s infinite;
+}
+
+.card .back .sky .cloud-7{
+    top: 169px;
+    width: 11.1px;
+    -webkit-animation: cloud .7s linear .3s infinite;
+            animation: cloud .7s linear .3s infinite;    
+}
+
+.card .back .sky .cloud-8{
+    top: 188px;
+    width: 17.2px;
+    -webkit-animation: cloud .8s linear .6s infinite;
+            animation: cloud .8s linear .6s infinite;    
+}
+
+.card .back .sky .cloud-9{
+    top: 207px;
+    width: 8.6px;
+    -webkit-animation: cloud .7s linear 1.3s infinite;
+            animation: cloud .7s linear 1.3s infinite;    
+}
+
+@-webkit-keyframes cloud {
+  0% {
+    -webkit-transform: translate3d(0, 0, 0) scaleX(1);
+            transform: translate3d(0, 0, 0) scaleX(1);
+  }
+  100% {
+    -webkit-transform: translate3d(-210px, 0, 0) scaleX(0.8);
+            transform: translate3d(-210px, 0, 0) scaleX(0.8);
+  }
+}
+@keyframes cloud {
+  0% {
+    -webkit-transform: translate3d(0, 0, 0) scaleX(1);
+            transform: translate3d(0, 0, 0) scaleX(1);
+  }
+  100% {
+    -webkit-transform: translate3d(-210px, 0, 0) scaleX(0.8);
+            transform: translate3d(-210px, 0, 0) scaleX(0.8);
+  }
+}
