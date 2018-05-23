@@ -21,13 +21,26 @@
     height: 280px;
     top: 100px;
     left: 70px;
-    /*background: #000;*/
+    -webkit-perspective: 800px;
+          perspective: 800px;
 }
 
 .card .flip{
     width: 100%;
     height: 100%;
     box-shadow: 8px 10px 15px 0 rgba(0, 0, 0, 0.5);
+    -webkit-transition: all 1s ease-in-out;
+            transition: all 1s ease-in-out;
+    -webkit-transform-style: preserve-3d;
+            transform-style: preserve-3d;
+    -webkit-perspective: 1000px;
+            perspective: 1000px;
+}
+
+.card:hover .flip{
+    -webkit-transform: rotateX(180deg);
+            transform: rotateX(180deg);
+    box-shadow: 8px -10px 15px 0 rgba(0, 0, 0, 0.5);
 }
 
 
@@ -42,10 +55,14 @@
     border-radius: 3px;
     overflow: hidden;
     text-align: center;
+    -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
 }
 
 .card .front {
-    /*z-index: 2;*/
+    z-index: 2;
+    -webkit-transform: rotateX(0);
+            transform: rotateX(0);
 }
 
 .flip img{
@@ -56,30 +73,9 @@
 
 .flip .front .thief{
     -webkit-animation: thief .6s ease-in-out infinite;
-          animation: thief .6s ease-in-out infinite;
+            animation: thief .6s ease-in-out infinite;
     -webkit-transform-origin: 50% 100%;
             transform-origin: 50% 100%;
-}
-
-@-webkit-keyframes thief {
-  0%, 100% {
-    -webkit-transform: scaleY(1);
-            transform: scaleY(1);
-  }
-  50% {
-    -webkit-transform: scaleY(1.03);
-            transform: scaleY(1.03);
-  }
-}
-@keyframes thief {
-  0%, 100% {
-    -webkit-transform: scaleY(1);
-            transform: scaleY(1);
-  }
-  50% {
-    -webkit-transform: scaleY(1.03);
-            transform: scaleY(1.03);
-  }
 }
 
 .card .front .street {
@@ -88,7 +84,6 @@
     left: 80px;
     width: 200px;
     height: 3px;
-    /*background: #000;*/
     overflow: hidden;
 }
 
@@ -154,51 +149,16 @@
             animation: street .9s linear .1s infinite;    
 }
 
-@-webkit-keyframes street {
-  0% {
-    -webkit-transform: translate3d(0, 0, 0) scaleX(1);
-            transform: translate3d(0, 0, 0) scaleX(1);
-  }
-  100% {
-    -webkit-transform: translate3d(-220px, 0, 0) scaleX(0.8);
-            transform: translate3d(-220px, 0, 0) scaleX(0.8);
-  }
-}
-@keyframes street {
-  0% {
-    -webkit-transform: translate3d(0, 0, 0) scaleX(1);
-            transform: translate3d(0, 0, 0) scaleX(1);
-  }
-  100% {
-    -webkit-transform: translate3d(-220px, 0, 0) scaleX(0.8);
-            transform: translate3d(-220px, 0, 0) scaleX(0.8);
-  }
-}
-
 .flip .back .police{
     -webkit-animation: police .6s ease-in-out infinite;
             animation: police .6s ease-in-out infinite;
 }
 
-@-webkit-keyframes police {
-  0%, 100% {
-    -webkit-transform: translate3d(0, -5px, 0);
-            transform: translate3d(0, -5px, 0);
-  }
-  50% {
-    -webkit-transform: translate3d(0, 5px, 0);
-            transform: translate3d(0, 5px, 0);
-  }
-}
-@keyframes police {
-  0%, 100% {
-    -webkit-transform: translate3d(0, -5px, 0);
-            transform: translate3d(0, -5px, 0);
-  }
-  50% {
-    -webkit-transform: translate3d(0, 5px, 0);
-            transform: translate3d(0, 5px, 0);
-  }
+.card .back {
+  -webkit-transform: rotateX(180deg);
+          transform: rotateX(180deg);
+  -webkit-transition: all 1s ease-in-out;
+          transition: all 1s ease-in-out;
 }
 
 .card .back .sky {
@@ -207,7 +167,6 @@
     left: 80px;
     width: 200px;
     height: 280px;
-    /*background: #000;*/
     overflow: hidden;
 }
 
@@ -279,6 +238,69 @@
     width: 8.6px;
     -webkit-animation: cloud .7s linear 1.3s infinite;
             animation: cloud .7s linear 1.3s infinite;    
+}
+
+@-webkit-keyframes thief {
+  0%, 100% {
+    -webkit-transform: scaleY(1);
+            transform: scaleY(1);
+  }
+  50% {
+    -webkit-transform: scaleY(1.03);
+            transform: scaleY(1.03);
+  }
+}
+@keyframes thief {
+  0%, 100% {
+    -webkit-transform: scaleY(1);
+            transform: scaleY(1);
+  }
+  50% {
+    -webkit-transform: scaleY(1.03);
+            transform: scaleY(1.03);
+  }
+}
+
+@-webkit-keyframes street {
+  0% {
+    -webkit-transform: translate3d(0, 0, 0) scaleX(1);
+            transform: translate3d(0, 0, 0) scaleX(1);
+  }
+  100% {
+    -webkit-transform: translate3d(-220px, 0, 0) scaleX(0.8);
+            transform: translate3d(-220px, 0, 0) scaleX(0.8);
+  }
+}
+@keyframes street {
+  0% {
+    -webkit-transform: translate3d(0, 0, 0) scaleX(1);
+            transform: translate3d(0, 0, 0) scaleX(1);
+  }
+  100% {
+    -webkit-transform: translate3d(-220px, 0, 0) scaleX(0.8);
+            transform: translate3d(-220px, 0, 0) scaleX(0.8);
+  }
+}
+
+@-webkit-keyframes police {
+  0%, 100% {
+    -webkit-transform: translate3d(0, -5px, 0);
+            transform: translate3d(0, -5px, 0);
+  }
+  50% {
+    -webkit-transform: translate3d(0, 5px, 0);
+            transform: translate3d(0, 5px, 0);
+  }
+}
+@keyframes police {
+  0%, 100% {
+    -webkit-transform: translate3d(0, -5px, 0);
+            transform: translate3d(0, -5px, 0);
+  }
+  50% {
+    -webkit-transform: translate3d(0, 5px, 0);
+            transform: translate3d(0, 5px, 0);
+  }
 }
 
 @-webkit-keyframes cloud {
