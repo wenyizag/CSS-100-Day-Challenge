@@ -40,3 +40,6 @@ This is a 100 Days CSS Challenge, this challenge is initialed by CodePen.com
 ## Day 14 - [Thief and Police](https://github.com/wenyizag/CSS-100-Day-Challenge/tree/master/Day%2014%20-%20Thief%20and%20police)
 <a href="https://imgflip.com/gif/2atesn"><img src="https://i.imgflip.com/2atesn.gif" title="made at imgflip.com"/></a>
 
+## Day 15 - [Upload](https://github.com/wenyizag/CSS-100-Day-Challenge/tree/master/Day%2015%20-%20Upload)
+<a href="https://imgflip.com/gif/2be6fd"><img src="https://i.imgflip.com/2be6fd.gif" title="made at imgflip.com"/></a>
+
