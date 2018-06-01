@@ -47,10 +47,10 @@ function startUpload() {
 		$syncing.addClass('active');
 		$done.addClass('active');
 		$bar.addClass('active');
-		timeoutID = window.setTimeOut(showDone, 3200);
+		timeoutID = window.setTimeout(showDone, 3200);
 	}
 }
 
-function showdone() {
-	$botton.html('Done');
+function showDone() {
+	$button.html('Done');
 }

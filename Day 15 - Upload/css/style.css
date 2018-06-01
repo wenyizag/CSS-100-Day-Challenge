@@ -47,12 +47,20 @@
     top: 64px;
     left: 0;
     background: #71d2b9;
+    -webkit-transition: all 3s ease-out;
+  			transition: all 3s ease-out;
     -webkit-transform: scaleX(0); 
      		transform: scaleX(0); 
+    -webkit-transform-origin: 0 0;		
+     		transform-origin: 0 0;
+}
+.bar.active{
+	transform: scaleX(1);
 }
 
 .dropzone{
     position: absolute;
+    z-index: 1;
     height: 100px;
     width: 130px;
     box-sizing: border-box;
@@ -66,20 +74,34 @@
     table-layout: fixed;
 }
 
+.dropzone.is-dragover {
+  	border-color: #666;
+  	background: #eee;
+}
+
 .dropzone .content{
 	display: table-cell;
 	vertical-align: middle;
 }
 
 .dropzone .content img{
-	margin: 6px 0 0 4px;
-	height: 50%;
+	margin: 6px 0 0 2px;
+    height: 35%;
+}
+
+.dropzone .input{
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	opacity: 0;
 }
 
 .dropzone .filename{
 	display: block;
     color: #3c3c3c;
-    font-size: 14px;
+    font-size: 16px;
     line-height: 18px;
 }
 
@@ -104,13 +126,85 @@
   box-shadow: 0 2px 0 0 #50a08c, 0 2px 10px 0 #6ECE3B;
 }
 
-
-
-.dropzone .input{
+.syncing{
 	position: absolute;
-	top: 0;
-	left: 0;
-	right: 0;
-	bottom: 0;
-	opacity: 0;
+    top: 127px;
+    left: 164px;
+    height: 15%;
+    opacity: 0;
 }
+
+.syncing.active{
+    -webkit-animation: syncing 3.2s ease-in-out;
+    		animation: syncing 3.2s ease-in-out;
+}
+
+.done{
+    position: absolute;
+    top: 131px;
+    left: 160px;
+    height: 14%;
+    opacity: 0;
+}
+
+.done.active{
+	-webkit-animation: done .5s ease-in 3.2s;
+            animation: done .5s ease-in 3.2s;
+    -webkit-animation-fill-mode: both;
+            animation-fill-mode: both;
+}
+
+@-webkit-keyframes syncing{
+	0%{
+		-webkit-transform: rotate(0deg);
+				transform: rotate(0deg);
+	}
+	10%{
+		opacity: 1;
+	}
+	90%{
+		opacity: 1;
+	}
+	100%{
+		-webkit-transform: rotate(360deg);
+		transform: rotate(360deg);
+		opacity: 0;
+	}
+}
+
+@keyframes syncing{
+	0%{
+		-webkit-transform: rotate(0deg);
+				transform: rotate(0deg);
+	}
+	10%{
+		opacity: 1;
+	}
+	90%{
+		opacity: 1;
+	}
+	100%{
+		-webkit-transform: rotate(360deg);
+		transform: rotate(360deg);
+		opacity: 0;
+	}
+}
+
+@-webkit-keyframes done{
+	0%{
+		opacity: 0;
+	}
+	100%{
+		opacity: 1;
+	}
+}
+
+@keyframes done{
+	0%{
+		opacity: 0;
+	}
+	100%{
+		opacity: 1;
+	}
+}
+
