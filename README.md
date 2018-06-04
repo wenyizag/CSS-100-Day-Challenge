@@ -1,5 +1,5 @@
 # CSS-100-Day-Challenge
-This is a 100 Days CSS Challenge, this challenge is initialed by CodePen.com 
+This is a 100 Days CSS Challenge, this challenge is initialed by [CodePen](https://100dayscss.com/)
 ## Day 1 - [Static and Fonts](https://github.com/wenyizag/CSS-100-Day-Challenge/tree/master/Day%201)
 <a href="https://imgflip.com/gif/28smqe"><img src="https://i.imgflip.com/28smqe.gif" title="made at imgflip.com"/></a>
 
