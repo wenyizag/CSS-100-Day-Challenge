@@ -43,3 +43,6 @@ This is a 100 Days CSS Challenge, this challenge is initialed by [CodePen](https
 ## Day 15 - [Upload](https://github.com/wenyizag/CSS-100-Day-Challenge/tree/master/Day%2015%20-%20Upload)
 <a href="https://imgflip.com/gif/2be6fd"><img src="https://i.imgflip.com/2be6fd.gif" title="made at imgflip.com"/></a>
 
+## Day 16 - [Penrose Triangle](https://github.com/wenyizag/CSS-100-Day-Challenge/tree/master/CSS-Day16-Penrose%20Triangle)
+<a href="https://imgflip.com/gif/2cni07"><img src="https://i.imgflip.com/2cni07.gif" title="made at imgflip.com"/></a>
+
