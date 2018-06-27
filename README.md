@@ -46,3 +46,6 @@ This is a 100 Days CSS Challenge, this challenge is initialed by [CodePen](https
 ## Day 16 - [Penrose Triangle](https://github.com/wenyizag/CSS-100-Day-Challenge/tree/master/CSS-Day16-Penrose%20Triangle)
 <a href="https://imgflip.com/gif/2cni07"><img src="https://i.imgflip.com/2cni07.gif" title="made at imgflip.com"/></a>
 
+## Day 17 - [Elastic](https://github.com/wenyizag/CSS-100-Day-Challenge/tree/master/CSS-Day17-Elastic)
+<a href="https://imgflip.com/gif/2d095l"><img src="https://i.imgflip.com/2d095l.gif" title="made at imgflip.com"/></a>
+
