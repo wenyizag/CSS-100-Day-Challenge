@@ -49,3 +49,6 @@ This is a 100 Days CSS Challenge, this challenge is initialed by [CodePen](https
 ## Day 17 - [Elastic](https://github.com/wenyizag/CSS-100-Day-Challenge/tree/master/CSS-Day17-Elastic)
 <a href="https://imgflip.com/gif/2d095l"><img src="https://i.imgflip.com/2d095l.gif" title="made at imgflip.com"/></a>
 
+## Day 18 - [Slider with Radio Buttons](https://github.com/wenyizag/CSS-100-Day-Challenge/tree/master/CSS-Day18-Slider%20With%20Radio%20Buttons)
+<a href="https://imgflip.com/gif/2d0neu"><img src="https://i.imgflip.com/2d0neu.gif" title="made at imgflip.com"/></a>
+
